@@ -29,7 +29,7 @@ function calculateEnergyOutput(delta) {
 		output += fusionReactor * fusionReactorOutput;
 	}
 
-	return speedFactor * output * multiplier;
+	return output * multiplier;
 }
 
 function calculateEnergyUse(delta) {
@@ -170,7 +170,7 @@ function refreshPerSec(delta){
 	// First we update and check the energy
 	var energyOutput = calculateEnergyOutput(delta);
 	var energyUse = calculateEnergyUse(delta);
-	energyps = energyOutput - energyUse;
+	energyps = (speedFactor * energyOutput) - energyUse;
 
 	var deltaEnergyDiff = energyps * delta;
 	energyLow = deltaEnergyDiff < 0 && (getResource(RESOURCE.Energy) <= 0 || getResource(RESOURCE.Energy) < deltaEnergyDiff);
