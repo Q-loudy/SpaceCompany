@@ -10,7 +10,7 @@ var activated = []; var techUnlocked = false; var meteoriteUnlocked = false;
 var globalEnergyLock = false;
 
 // Speed Factor
-var speedFactor = 1;
+var speedFactor = 2;
 
 // Plasma
 var plasma = 0; var plasmaps = 0;
