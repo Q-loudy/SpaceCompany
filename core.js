@@ -29,7 +29,7 @@ function calculateEnergyOutput(delta) {
 		output += fusionReactor * fusionReactorOutput;
 	}
 
-	return output * multiplier;
+	return speedFactor * output * multiplier;
 }
 
 function calculateEnergyUse(delta) {
