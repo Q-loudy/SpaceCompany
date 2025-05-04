@@ -480,7 +480,7 @@ Game.techData = (function () {
 
     instance.efficiencyResearch = $.extend({}, techBase, {
         name: 'Resource Efficiency',
-        desc: 'Resource Efficiency increases the income of resources by 1%/s per purchase.',
+        desc: 'Resource Efficiency increases the income of resources by 10%/s per purchase.',
         type: TECH_TYPE.UPGRADE,
         costType: COST_TYPE.FIXED,
         maxLevel: -1,
@@ -491,12 +491,12 @@ Game.techData = (function () {
 
     instance.scienceEfficiencyResearch = $.extend({}, techBase, {
         name: 'Science Efficiency',
-        desc: 'Science Efficiency increases the science production by 2% per purchase.',
+        desc: 'Science Efficiency increases the science production by 20% per purchase.',
         type: TECH_TYPE.UPGRADE,
         costType: COST_TYPE.FIXED,
         maxLevel: -1,
         cost: {
-            'science': 10000000
+            'science': 1000000
         }
     });
 
