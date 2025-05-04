@@ -485,7 +485,7 @@ Game.techData = (function () {
         costType: COST_TYPE.FIXED,
         maxLevel: -1,
         cost: {
-            'science': 100000
+            'science': 10000
         }
     });
 
@@ -496,7 +496,7 @@ Game.techData = (function () {
         costType: COST_TYPE.FIXED,
         maxLevel: -1,
         cost: {
-            'science': 1000000
+            'science': 100000
         }
     });
 
